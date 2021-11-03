@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  margin-top: 30px;
+}
+
+.sedan-icon,
+.suv-icon,
+.lux-icon {
+  padding-top: 50px;
+  margin-left: 40px;
+}
+
+.sedans,
+.suvs,
+.lux {
+  height: 480px;
+  width: 300px;
+  justify-content: center;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 15px 0px 0px 15px;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.lux {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 15px 15px 0px;
+}
+
+.section-title {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 42px;
+  width: 200px;
+  height: 40px;
+  margin-left: 40px;
+}
+
+.text {
+  color: hsla(0, 0%, 100%, 0.75);
+  width: 220px;
+  height: 120px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  margin-left: 40px;
+  margin-bottom: 65px;
+  padding-right: 10px;
+}
+
+.sedan-button,
+.suv-button,
+.lux-button {
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 30px 30px 30px 30px;
+  margin-left: 40px;
+  padding: 15px 32px;
+  border: 2px #fff solid;
+}
+
+.sedan-button {
+  color: hsl(31, 77%, 52%);
+}
+
+.suv-button {
+  color: hsl(184, 100%, 22%);
+}
+
+.lux-button {
+  color: hsl(179, 100%, 13%);
+}
+
+.sedan-button:hover {
+  cursor: pointer;
+  border: 2px #fff solid;
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+
+.suv-button:hover {
+  cursor: pointer;
+  border: 2px #fff solid;
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+}
+
+.lux-button:hover {
+  cursor: pointer;
+  border: 2 #fff solid;
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-device-width: 375px) {
+  .container {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .sedans {
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .suvs {
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  .lux {
+    border-radius: 0px 0px 15px 15px;
+  }
+}
